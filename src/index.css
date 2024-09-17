@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "ActOfRejection";
+  src: url("/src/assets/Font/Act_Of_Rejection.ttf") format("truetype");
+  font-weight: 100 900; /* The weight range for this variable font */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/src/assets/Font/Montserrat/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900; /* The weight range for this variable font */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/src/assets/Font/Inter/Inter-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-weight: 100 900; /* The weight range for this variable font */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-italic";
+  src: url("/src/assets/Font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900; /* The weight range for this variable font */
+  font-style: italic;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
