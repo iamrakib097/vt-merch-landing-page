@@ -2,6 +2,7 @@ import BestSelling from "./sections/BestSelling";
 import Collection from "./sections/Collection";
 import Header from "./sections/Header";
 import Quotes from "./sections/Quotes";
+import ShopCollection from "./sections/ShopCollection";
 export default function App() {
   return (
     <>
@@ -9,6 +10,7 @@ export default function App() {
       <BestSelling />
       <Collection />
       <Quotes />
+      <ShopCollection />
     </>
   );
 }

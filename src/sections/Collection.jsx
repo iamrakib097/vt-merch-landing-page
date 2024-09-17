@@ -21,7 +21,7 @@ const Collection = () => {
           </h2>
         </div>
         <div className="mt-6">
-          <Button />
+          <Button text="Shop now" />
         </div>
 
         <img src={signature} alt="" />
