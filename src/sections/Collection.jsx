@@ -2,15 +2,16 @@ import Button from "../ui/Button";
 import signature from "../assets/img/pat-signature.png";
 import redBook from "../assets/img/img(1).png";
 import whiteBook from "../assets/img/img(8).png";
+
 const Collection = () => {
   return (
-    <section className="bg-black px-20 py-20 font-montserrat flex">
-      <div className="">
-        <div className="text-white text-3xl tracking-widest">
+    <section className="max-w-[1440px] mx-auto  pt-10 sm:pt-20 bg-black px-4 sm:px-20 py-10 sm:py-20 font-montserrat flex flex-col sm:flex-row overflow-x-clip">
+      <div className="sm:w-1/2">
+        <div className="text-white text-xl sm:text-3xl tracking-widest">
           Patrick Bet-David's
         </div>
-        <div className="mt-6">
-          <h2 className=" text-white text-5xl  font-bold  mt-6 leading-[60px]">
+        <div className="mt-4 sm:mt-6">
+          <h2 className="text-white text-3xl sm:text-5xl font-bold leading-[40px] sm:leading-[60px] mt-4 sm:mt-6">
             <span className="bg-gradient-to-b from-[#EF5256] to-[#DE2A2F] text-transparent bg-clip-text">
               Signed
             </span>
@@ -20,19 +21,23 @@ const Collection = () => {
             </span>
           </h2>
         </div>
-        <div className="mt-6">
+        <div className="mt-4 sm:mt-6">
           <Button text="Shop now" />
         </div>
-
-        <img src={signature} alt="" />
+        <img src={signature} alt="" className="mt-6 w-40 sm:w-auto" />
       </div>
-      <div className="flex justify-between items-center ">
+
+      <div className=" relative sm:w-1/2 flex justify-center  sm:-space-x-20 sm:justify-center items-center mt-10 sm:mt-0 ">
         <img
           src={redBook}
           alt=""
-          className="w-[300px] max-w-screen-sm -mr-12"
+          className="w-[200px] sm:w-[280px] xl:w-[300px] max-w-screen-sm  -mr-6 sm:-mr-12 md:mr-10"
         />
-        <img src={whiteBook} alt="" className="w-[230px]  max-w-screen-sm" />
+        <img
+          src={whiteBook}
+          alt=""
+          className="w-[180px]  sm:w-[210px] max-w-screen-sm "
+        />
       </div>
     </section>
   );

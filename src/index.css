@@ -8,14 +8,14 @@
   font-family: "Montserrat";
   src: url("/src/assets/Font/Montserrat/Montserrat-VariableFont_wght.ttf")
     format("truetype");
-  font-weight: 100 900; /* The weight range for this variable font */
+  font-weight: 100 900;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url("/src/assets/Font/Inter/Inter-VariableFont_opsz,wght.ttf")
+  src: url("/src/assets/Font/Inter/Inter-VariableFont_opsz_wght.ttf")
     format("truetype");
-  font-weight: 100 900; /* The weight range for this variable font */
+  font-weight: 100 900;
   font-style: normal;
 }
 
@@ -23,7 +23,7 @@
   font-family: "Montserrat-italic";
   src: url("/src/assets/Font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf")
     format("truetype");
-  font-weight: 100 900; /* The weight range for this variable font */
+  font-weight: 100 900;
   font-style: italic;
 }
 

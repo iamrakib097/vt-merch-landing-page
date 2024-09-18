@@ -6,9 +6,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        montserrat: ["Montserrat", "sans-serif"], // Adding Montserrat font
+        montserrat: ["Montserrat", "sans-serif"],
         montserratitalic: ["Montserrat-italic", "sans-serif"],
         ActOfRejection: ["ActOfRejection", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       textShadow: {
         custom:

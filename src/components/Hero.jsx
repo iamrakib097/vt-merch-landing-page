@@ -26,7 +26,7 @@ const Hero = () => {
       {
         breakpoint: 800,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -100,7 +100,7 @@ const Hero = () => {
 
       <div className="relative flex md:justify-end justify-center items-center overflow-hidden ">
         <div className="w-full lg:max-w-screen-[740px] md:max-w-screen-[780px] xl:max-w-screen-[1220px]">
-          <Slider {...settings} className="w-full pb-10 md: mx-10 lg:mx-40">
+          <Slider {...settings} className="sm:w-full pb-10 md: mx-10 lg:mx-40">
             {products.map((item) => (
               <div key={item.id} className="flex justify-center items-center">
                 <HeroCard
