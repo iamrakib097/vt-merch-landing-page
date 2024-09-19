@@ -20,6 +20,11 @@ const Quotes = () => {
         sm-width={150}
       />
       <img
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
         src={figureImage}
         alt=""
         className="hidden sm:block absolute md:right-10 lg:right-4 sm:right-12 xl:right-[100px] -top-[84px]"

@@ -28,7 +28,14 @@ const products = [
 const FutureLooksBright = () => {
   return (
     <section className=" flex flex-col lg:flex-row justify-center items-center max-w-[1440px] mx-auto sm:px-20 pt-10 sm:pt-20 font-montserrat px-4 py-10 sm:py-20">
-      <div className="space-y-4  py-4 flex-2 text-start lg:mr-40">
+      <div
+        className="space-y-4  py-4 flex-2 text-start lg:mr-40"
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <h2 className="font-ActOfRejection text-4xl sm:text-6xl lg:text-4xl xl:text-6xl leading-[50px] tracking-widest">
           FUTURE LOOKS BRIGHT
         </h2>
@@ -41,7 +48,14 @@ const FutureLooksBright = () => {
           </span>
         </p>
       </div>
-      <div className="flex gap-4 flex-3">
+      <div
+        className="flex gap-4 flex-3"
+        data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         {products.map((prod) => (
           <FutureCard
             key={prod.id}

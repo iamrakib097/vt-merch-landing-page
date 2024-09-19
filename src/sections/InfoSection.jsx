@@ -34,7 +34,14 @@ const InfoSection = () => {
 
   return (
     <section className="max-w-[1440px] mx-auto  py-10 md:py-10 px-20 bg-gradient-to-bl from-[#BB1117] to-[#EC3339] flex flex-col md:flex-row justify-center items-center">
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10 ">
+      <div
+        className="flex flex-col md:flex-row justify-center items-center gap-10 "
+        data-aos="zoom-in"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         {infoItems.map((item, index) => (
           <InfoCard
             key={index}

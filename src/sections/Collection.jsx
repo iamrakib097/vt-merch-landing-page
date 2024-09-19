@@ -21,7 +21,14 @@ const Collection = () => {
       ref={collectionRef}
       className="max-w-[1440px] mx-auto  pt-10 sm:pt-20 bg-black px-4 sm:px-20 py-10 sm:py-20 font-montserrat flex flex-col sm:flex-row overflow-x-clip"
     >
-      <div className="sm:w-1/2">
+      <div
+        className="sm:w-1/2"
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
         <div className="text-white text-xl sm:text-3xl tracking-widest">
           Patrick Bet-David's
         </div>

@@ -35,12 +35,26 @@ const ProductOfMonth = () => {
   return (
     <section className="flex flex-col px-10 items-center pb-10 gap-6 max-w-[1440px] mx-auto sm:px-20 pt-10 sm:pt-20 bg-[#F6F5F5]">
       <div>
-        <h1 className="text-4xl sm:text-6xl font-mono tracking-wide uppercase">
+        <h1
+          className="text-4xl sm:text-6xl font-mono tracking-wide uppercase"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           Product of <span style={styles.heading}>the month</span>
         </h1>
       </div>
       <div className="flex flex-col justify-center items-center xl:flex-row gap-4 w-full">
-        <div className="flex  items-center sm:flex-row gap-6 w-full sm:w-auto">
+        <div
+          className="flex  items-center sm:flex-row gap-6 w-full sm:w-auto"
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <div className="flex flex-col items-center justify-center gap-4">
             <img
               src={topArrow}
@@ -83,7 +97,14 @@ const ProductOfMonth = () => {
             <img src={bagClose} alt="Bag Close Large" width="100%" />
           </div>
         </div>
-        <div className="font-montserrat max-w-[600px] text-[#060606] space-y-6">
+        <div
+          className="font-montserrat max-w-[600px] text-[#060606] space-y-6"
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           <h3 className="text-xl sm:text-2xl font-semibold">
             Premium Valuetainment Leather Backpack
           </h3>
