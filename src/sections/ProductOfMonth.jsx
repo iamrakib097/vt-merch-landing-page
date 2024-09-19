@@ -40,7 +40,7 @@ const ProductOfMonth = () => {
           data-aos="fade-up"
           data-aos-offset="200"
           data-aos-delay="50"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out"
         >
           Product of <span style={styles.heading}>the month</span>
@@ -52,7 +52,7 @@ const ProductOfMonth = () => {
           data-aos="fade-right"
           data-aos-offset="200"
           data-aos-delay="50"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out"
         >
           <div className="flex flex-col items-center justify-center gap-4">
@@ -102,7 +102,7 @@ const ProductOfMonth = () => {
           data-aos="fade-left"
           data-aos-offset="200"
           data-aos-delay="50"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           data-aos-easing="ease-in-out"
         >
           <h3 className="text-xl sm:text-2xl font-semibold">

@@ -1,6 +1,11 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import image1 from "../assets/img/img(9).png";
+import image2 from "../assets/img/img(10).png";
+import image3 from "../assets/img/img(11).png";
+import image4 from "../assets/img/img(11).jpeg";
+
 import HeroCard from "../ui/HeroCard";
 import {
   motion,
@@ -64,42 +69,42 @@ const Hero = () => {
   const products = [
     {
       id: 1,
-      image: "src/assets/img/img(9).png",
+      image: image1,
       title: "Army Green Active Short Sleeve",
       price: "$34.95",
       originalPrice: "$34.95",
     },
     {
       id: 2,
-      image: "src/assets/img/img(10).png",
+      image: image2,
       title: "Army Green Active Short Sleeve",
       price: "$34.95",
       originalPrice: "$34.95",
     },
     {
       id: 3,
-      image: "src/assets/img/img(11).png",
+      image: image3,
       title: "Army Green Active Short Sleeve",
       price: "$34.95",
       originalPrice: "$34.95",
     },
     {
       id: 4,
-      image: "src/assets/img/img(11).jpeg",
+      image: image4,
       title: "Army Green Active Short Sleeve",
       price: "$34.95",
       originalPrice: "$34.95",
     },
     {
       id: 5,
-      image: "src/assets/img/img(9).png",
+      image: image1,
       title: "Army Green Active Short Sleeve",
       price: "$34.95",
       originalPrice: "$34.95",
     },
     {
       id: 6,
-      image: "src/assets/img/img(10).png",
+      image: image2,
       title: "Army Green Active Short Sleeve",
       price: "$34.95",
       originalPrice: "$34.95",

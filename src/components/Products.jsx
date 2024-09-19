@@ -1,30 +1,33 @@
 import BestSellingCard from "../ui/BestSellingCard";
-
+import cap1 from "../assets/img/img(4).jpeg";
+import cap2 from "../assets/img/img(6).jpeg";
+import cap3 from "../assets/img/img(7).jpeg";
+import cap4 from "../assets/img/img(10).jpeg";
 const caps = [
   {
     id: 1,
-    image: "src/assets/img/img(4).jpeg",
+    image: cap1,
     title: "Army Green Active Short Sleeve",
     price: "$34.95",
     originalPrice: "$34.95",
   },
   {
     id: 2,
-    image: "src/assets/img/img(6).jpeg",
+    image: cap2,
     title: "Army Green Active Short Sleeve",
     price: "$34.95",
     originalPrice: "$34.95",
   },
   {
     id: 3,
-    image: "src/assets/img/img(7).jpeg",
+    image: cap3,
     title: "Army Green Active Short Sleeve",
     price: "$34.95",
     originalPrice: "$34.95",
   },
   {
     id: 4,
-    image: "src/assets/img/img(10).jpeg",
+    image: cap4,
     title: "Army Green Active Short Sleeve",
     price: "$34.95",
     originalPrice: "$34.95",

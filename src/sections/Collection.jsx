@@ -26,7 +26,7 @@ const Collection = () => {
         data-aos="fade-right"
         data-aos-offset="200"
         data-aos-delay="50"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out"
       >
         <div className="text-white text-xl sm:text-3xl tracking-widest">

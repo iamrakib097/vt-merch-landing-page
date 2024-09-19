@@ -33,7 +33,7 @@ const FutureLooksBright = () => {
         data-aos="fade-right"
         data-aos-offset="200"
         data-aos-delay="50"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out"
       >
         <h2 className="font-ActOfRejection text-4xl sm:text-6xl lg:text-4xl xl:text-6xl leading-[50px] tracking-widest">
@@ -53,7 +53,7 @@ const FutureLooksBright = () => {
         data-aos="fade-left"
         data-aos-offset="200"
         data-aos-delay="50"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out"
       >
         {products.map((prod) => (
