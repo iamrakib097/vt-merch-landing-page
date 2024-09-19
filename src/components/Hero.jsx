@@ -2,16 +2,30 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import HeroCard from "../ui/HeroCard";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useMotionValueEvent,
+} from "framer-motion";
+import { useRef } from "react";
 // Hero Component
 const Hero = () => {
+  const titleRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: titleRef,
+    offset: ["start end", "end start"],
+  });
+  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    cssEase: "linear", // Ensures a smooth transition
+    speed: 5000,
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 0,
     arrows: false,
     prevArrow: <div className="slick-prev absolute left-2 z-10">←</div>,
     nextArrow: <div className="slick-next absolute right-2 z-10">→</div>,
@@ -93,10 +107,15 @@ const Hero = () => {
   ];
 
   return (
-    <div className="relative mt-32 text-center ">
-      <h1 className="absolute inset-0 z-0 font-ActOfRejection text-white text-[34px] md:text-[90px] text-opacity-30 uppercase tracking-wider sm:-top-32 lg:-top-10">
+    <section ref={titleRef} className="relative mt-32 text-center ">
+      <motion.h1
+        style={{
+          translateY: translateY,
+        }}
+        className="absolute inset-0 z-0 font-ActOfRejection text-white text-[34px] md:text-[70px] lg:text-[90px] text-opacity-30 uppercase tracking-wider -top-16 sm:-top-20 md:top-0 lg:-top-14"
+      >
         future looks bright!
-      </h1>
+      </motion.h1>
 
       <div className="relative flex md:justify-end justify-center items-center overflow-hidden ">
         <div className="w-full lg:max-w-screen-[740px] md:max-w-screen-[780px] xl:max-w-screen-[1220px]">
@@ -114,7 +133,7 @@ const Hero = () => {
           </Slider>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

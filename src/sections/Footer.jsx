@@ -13,6 +13,7 @@ import FacebookIcon from "../ui/FacebookIcon";
 import TwitterIcon from "../ui/TwitterIcon";
 import InstagramIcon from "../ui/InstagramIcon";
 import LinkedinIcon from "../ui/TwitterIcon";
+
 const Footer = () => {
   return (
     <footer className="flex flex-col max-w-[1440px] mx-auto  pt-10 sm:pt-20 px-5 md:px-20 bg-black text-white gap-10">
@@ -37,7 +38,7 @@ const Footer = () => {
           <ButtonLong text="Subscribe" bg="white" />
         </div>
         <div className="flex-1 flex flex-col gap-4 font-inter">
-          <p className="text-xl">Customer Services</p>
+          <p className="text-xl font-semibold">Customer Services</p>
           <ul className="space-y-4 text-sm">
             <li>
               <a href="#">About Us</a>
@@ -63,7 +64,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex-1 flex flex-col gap-4 font-inter">
-          <p className="text-xl">Products</p>
+          <p className="text-xl font-semibold">Products</p>
           <ul className="space-y-4 text-sm">
             <li>
               <a href="#">Featured products</a>
@@ -83,7 +84,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex-1 flex flex-col gap-4 font-inter">
-          <p className="text-xl">Contact Us</p>
+          <p className="text-xl font-semibold">Contact Us</p>
           <ul className="space-y-4 text-sm">
             <li>
               <p>

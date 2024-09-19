@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useRef } from "react";
 import carHumanImage from "../assets/img/img(10).png";
 import chess from "../assets/img/img(3).png";
 import vGurd from "../assets/img/vGurd_red.png";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useMotionValueEvent,
+} from "framer-motion";
 const WhatWeBelieve = () => {
+  const titleRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: titleRef,
+    offset: ["start end", "end start"],
+  });
+  const translateY = useTransform(scrollYProgress, [0, 1], [200, -200]);
   return (
-    <section className="md:relative flex flex-col  md:pt-40 max-w-[1440px] mx-auto sm:px-20 sm:pt-20 justify-center items-center h-auto px-5 bg-gradient-to-l from-[#000000] to-[#3B3B3B] pb-10">
+    <section
+      ref={titleRef}
+      className="md:relative flex flex-col  md:pt-40 max-w-[1440px] mx-auto sm:px-20 sm:pt-20 justify-center items-center h-auto px-5 bg-gradient-to-l from-[#000000] to-[#3B3B3B] pb-10"
+    >
       <h1 className="md:absolute md:top-36 xl:right-[550px] 2xl:right-[600px] lg:right-[180px] md:right-8 md:text-[80px] text-white font-ActOfRejection tracking-wide text-4xl pt-10 inline-flex justify-center items-center gap-4">
         what we believe
         <span className="md:hidden">
@@ -50,7 +65,10 @@ const WhatWeBelieve = () => {
               wins. Free speech is critical to productive debate.
             </p>
           </div>
-          <img
+          <motion.img
+            style={{
+              translateY: translateY,
+            }}
             src={vGurd}
             alt=""
             className="absolute top-0  xl:-top-40 xl:-right-40"

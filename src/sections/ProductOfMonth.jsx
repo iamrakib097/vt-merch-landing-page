@@ -10,6 +10,9 @@ import InstagramIcon from "../ui/InstagramIcon";
 import TwitterIcon from "../ui/TwitterIcon";
 import LinkedinIcon from "../ui/LinkedinIcon";
 
+import { useState } from "react";
+import { motion } from "framer-motion";
+
 const styles = {
   heading: {
     color: "black",
@@ -19,6 +22,16 @@ const styles = {
 };
 
 const ProductOfMonth = () => {
+  const [value, setValue] = useState(1);
+
+  const handleIncrement = () => {
+    setValue((prevValue) => prevValue + 1);
+  };
+
+  const handleDecrement = () => {
+    setValue((prevValue) => Math.max(prevValue - 1, 0)); // Prevent going below 0
+  };
+
   return (
     <section className="flex flex-col px-10 items-center pb-10 gap-6 max-w-[1440px] mx-auto sm:px-20 pt-10 sm:pt-20 bg-[#F6F5F5]">
       <div>
@@ -85,27 +98,76 @@ const ProductOfMonth = () => {
           <div className="inline-flex flex-wrap justify-center items-center gap-4">
             <p>Size:</p>
             <div className="border-[1px] border-black flex flex-wrap">
-              <button className="py-1 px-2 border-r-[1px] border-black">
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="active:bg-white py-1 px-2 border-r-[1px] border-black hover:bg-white"
+              >
                 S
-              </button>
-              <button className="py-1 px-2 border-r-[1px] border-black">
+              </motion.button>
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="active:bg-white py-1 px-2 border-r-[1px] border-black hover:bg-white"
+              >
                 M
-              </button>
-              <button className="py-1 px-2 border-r-[1px] border-black">
+              </motion.button>
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="active:bg-white py-1 px-2 border-r-[1px] border-black hover:bg-white"
+              >
                 L
-              </button>
-              <button className="py-1 px-2 border-r-[1px] border-black">
+              </motion.button>
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="active:bg-white py-1 px-2 border-r-[1px] border-black hover:bg-white"
+              >
                 XL
-              </button>
-              <button className="py-1 px-2 border-black">XXL</button>
+              </motion.button>
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="active:bg-white py-1 px-2 border-black hover:bg-white"
+              >
+                XXL
+              </motion.button>
             </div>
           </div>
           <div className="space-y-2">
             <div>Quantity:</div>
             <div className="border-[1px] border-black inline-flex">
-              <div className="px-3 py-1 border-r-[1px] border-black">-</div>
-              <div className="px-3 py-1 border-r-[1px] border-black">1</div>
-              <div className="px-3 py-1">+</div>
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="px-3 py-1 border-r-[1px] border-black hover:bg-white"
+                onClick={handleDecrement}
+              >
+                -
+              </motion.button>
+              <input
+                type="text"
+                value={value}
+                readOnly
+                size={3}
+                className="px-1 py-1 border-r-[1px] w-full border-black text-center"
+              />
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                className="px-3 py-1 hover:bg-white"
+                onClick={handleIncrement}
+              >
+                +
+              </motion.button>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
